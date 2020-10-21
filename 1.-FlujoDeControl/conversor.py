@@ -17,4 +17,3 @@ while seguir_operando:
     seguir_operando = bool(int(input("¿Quieres seguir haciendo operaciones?\n\
 (Pulsa 0 para terminar el programa o 1 para continuar haciendo operaciones)")))
 
-    #Cambio para probar el pull request
