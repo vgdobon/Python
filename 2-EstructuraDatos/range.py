@@ -1,9 +1,9 @@
-def range(min,max,step):
+def range(minimo,maximo,step):
     lista=[]
 
-    while min<max:
-        lista.append(min)
-        min+=step
+    while minimo<maximo:
+        lista+=[minimo] #lista.append(minimo)
+        minimo+=step
 
     return lista
 
