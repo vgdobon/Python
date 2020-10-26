@@ -10,7 +10,6 @@ for i in lista:
 print(lista_numericos)
 
 
-
 suma=0
 for i in lista_numericos:
     suma+=i
@@ -20,4 +19,4 @@ print("Media:",suma/len(lista_numericos))
 
 
 print("Suma con metodos:",sum(lista_numericos))
-print("Media con metodos",round(stats.mean(lista_numericos)))
+print("Media con metodos",round(stats.mean(lista_numericos),2))
