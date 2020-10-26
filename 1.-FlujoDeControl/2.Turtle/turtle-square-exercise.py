@@ -19,7 +19,7 @@ t.down()
 # El dibujo en sí.
 # === INICIO PARTE A MODIFICAR ===
 SIDE_LENGTH = 200
-angle = 360/numero_lados
+angle = 10
 i=0
 while i<numero_lados:
     t.forward(SIDE_LENGTH)
