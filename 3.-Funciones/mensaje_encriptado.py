@@ -15,6 +15,10 @@ diccionario = {
 }
 
 def print_rot13(palabra):
+    """Pasa una cadena como argumento para codificar ese mensaje,
+       la convierte a mensaje encriptado y devuelve la nueva cadena
+       encriptada
+    """
     palabra_encriptada=""
 
     for i in palabra:

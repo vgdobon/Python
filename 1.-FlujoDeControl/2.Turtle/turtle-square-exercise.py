@@ -11,6 +11,7 @@ t = turtle.Turtle()
 numero_lados= int(input("Dime el numeros de lados"))
 
 # Posición inicial no centrada (opcional, se puede modif./eliminar)
+
 t.up()  # lápiz "arriba" (no pintar)
 t.goto(-100, 100)  # movimiento directo a coordenadas, por sencillez (no es lo habitual)
 t.down()
