@@ -21,7 +21,7 @@ def print_rot13(palabra):
     """
     palabra_encriptada=""
 
-    for i in palabra:
+    for i in palabra.lower():
         if i != (" "):
             if i in diccionario.keys():
                 palabra_encriptada = palabra_encriptada + diccionario[i]
@@ -32,7 +32,8 @@ def print_rot13(palabra):
     print(palabra_encriptada)
 
 palabra = input("Mensaje a escriptar:")
-print(palabra,":")
 print()
+print(palabra,":",end=" ")
+
 
 print_rot13(palabra)
