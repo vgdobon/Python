@@ -13,7 +13,3 @@ def irpf(base, porcentaje=12.5,prorrateado=False):
 print(irpf(1000,10))
 print(irpf(10000,porcentaje=20))
 print(irpf(1000))
-
-flotante = 12.4
-print(flotante==float)
-
