@@ -14,14 +14,13 @@ diccionario = {
                 "m":"z",
 }
 
-def print_rot13(palabra):
+def print_rot13(frase):
     """Pasa una cadena como argumento para codificar ese mensaje,
-       la convierte a mensaje encriptado y devuelve la nueva cadena
-       encriptada
+       la convierte a mensaje encriptado e imprime el mensaje codificado
     """
     palabra_encriptada=""
 
-    for i in palabra.lower():
+    for i in frase.lower():
         if i != (" "):
             if i in diccionario.keys():
                 palabra_encriptada = palabra_encriptada + diccionario[i]
@@ -30,10 +29,3 @@ def print_rot13(palabra):
         else:
             palabra_encriptada += " "
     print(palabra_encriptada)
-
-palabra = input("Mensaje a escriptar:")
-print()
-print(palabra,":",end=" ")
-
-
-print_rot13(palabra)

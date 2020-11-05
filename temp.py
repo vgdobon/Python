@@ -17,29 +17,32 @@ billetes = [5,5,10,10,10,10,10,20,20,20]
 
 def devolucion(peticion_cliente,billetes,combinacion=None):
 
-    if combinacion is None:
-        combinacion=[]
+    aux = []
+    for i in ...:
+        
+        if combinacion is None:
+            combinacion=[]
 
-    if peticion_cliente > 0 :
-        print(billetes)
+        if peticion_cliente > 0 :
+            print(billetes)
 
-        posible_billete=(billetes[int(len(billetes)/2)])
-        if peticion_cliente >= posible_billete:
-            billete_sacado = posible_billete
-            billetes.remove(billete_sacado)
-            peticion_cliente-=billete_sacado
-            combinacion.append(billete_sacado)
-            return devolucion(peticion_cliente,billetes,combinacion)
+            posible_billete=(billetes[int(len(billetes)/2)])
+            if peticion_cliente >= posible_billete:
+                billete_sacado = posible_billete
+                billetes.remove(billete_sacado)
+                peticion_cliente-=billete_sacado
+                combinacion.append(billete_sacado)
+                return devolucion(peticion_cliente,billetes,combinacion)
 
-        elif peticion_cliente >= min(billetes):
-            billete_sacado = min(billetes)
-            billetes.remove(billete_sacado)
-            peticion_cliente-=billete_sacado
-            combinacion.append(billete_sacado)
-            return devolucion(peticion_cliente,billetes,combinacion)
+            elif peticion_cliente >= min(billetes):
+                billete_sacado = min(billetes)
+                billetes.remove(billete_sacado)
+                peticion_cliente-=billete_sacado
+                combinacion.append(billete_sacado)
+                return devolucion(peticion_cliente,billetes,combinacion)
 
-    else:
-        return combinacion
+        else:
+            aux.append()
 
 
 
