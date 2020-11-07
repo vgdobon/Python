@@ -10,4 +10,4 @@ if ((pow(b,2)-4*a*c))<0:
 else:
     xPositivo = (-b + math.sqrt(pow(b,2)-4*a*c))/(2*a)
     xNegativo = (-b - math.sqrt(pow(b,2)-4*a*c))/(2*a)
-    print("Valor positivo: ",xNegativo,"\nValor positivo: " ,xPositivo)
+    print("Valor minimo: ",xNegativo,"\nValor maximo: " ,xPositivo)
