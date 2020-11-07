@@ -19,11 +19,11 @@ def koch(t, order, size):
         t.forward(size)
     else:
         koch(t,order-1,size/3)
-        t.left(60)
+        t.right(60)
         koch(t,order-1,size/3)
-        t.right(120)
+        t.left(120)
         koch(t,order-1,size/3)
-        t.left(60)
+        t.right(60)
         koch(t,order-1,size/3)
 
 t = turtle.Turtle()
@@ -31,16 +31,16 @@ t = turtle.Turtle()
 # Dibujar el fractal de Koch varias veces (con distinto 'orden')
 # for i in range(10):
 #     # Las tres líneas siguientes, simplemente para ubicar cada uno OK
-#     t.up()  # Pencil up
-#     t.goto(-150, 300 - i * 150)
-#     t.down()
+t.up()  # Pencil up
+t.goto(-550, 300)
+t.down()
 
 #     # Dibujar el fractal de orden i
 #     koch(t, i, 100)
 
 
 for i in 0, 1, 2:
-    koch(t, 3, 100)
+    koch(t,5, 300)
     t.right(120)
 
 

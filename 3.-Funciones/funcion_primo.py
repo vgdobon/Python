@@ -9,7 +9,7 @@ def divisores(numero,divisores=None):
         if(numero%i==0):
             divisores.append(i)
         i+=1
-    
+        
     return divisores
 
 def primo(numero):
@@ -31,17 +31,5 @@ numero = int(input("Dime un numero"))
 print("Es primo?",primo(numero))
 print()
 
-def divisores(numero,divisores=None):
-    if divisores is None:
-        divisores=[]
-    i=2
-
-    while i < numero:
-        if(numero%i==0):
-            divisores.append(i)
-        i+=1
-    
-    return divisores
-
 print("Divisores de",numero,":",divisores(numero))
-print() 
+print()
