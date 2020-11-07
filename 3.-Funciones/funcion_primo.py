@@ -18,3 +18,4 @@ def primo(numero):
 numero = int(input("Dime un numero"))
 
 print("Es primo?",primo(numero))
+print()
