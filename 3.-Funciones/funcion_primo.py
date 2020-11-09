@@ -1,8 +1,8 @@
 import math
 
-def divisores(numero,divisores=None):
-    if divisores is None:
-        divisores=[]
+def divisores(numero):
+    
+    divisores=[]
     i=2
 
     while i < numero:
@@ -11,6 +11,16 @@ def divisores(numero,divisores=None):
         i+=1
         
     return divisores
+
+def factoriales_divisores(numero):
+    divisores_factoriales=[]
+    while numero > 1:
+        for i in range(2,numero):
+            if numero%i==0:
+                divisores_factoriales.append(i)
+                numero = numero/i
+            
+
 
 def primo(numero):
     raiz = math.sqrt(numero)

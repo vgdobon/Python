@@ -1,8 +1,12 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
 billetes = [5,5,10,10,10,10,10,20,20,20]
 
 def potencia(c):
     """Calcula y devuelve el conjunto potencia del 
        conjunto c.
+       Devuelve todas las combinaciones en una lista
     """
     if len(c) == 0:
         return [[]]
