@@ -11,13 +11,13 @@ inserta(x, lst, i):
         Devuelve una nueva lista resultado de insertar
         x dentro de lst en la posición i.
 _________________________________________________________________________________
-permuta(l):
+permutaciones(l):
        Calcula y devuelve una lista con todas las
        permutaciones posibles que se pueden hacer
        con los elementos de una lista(l).
     
 _________________________________________________________________________________
-permutar(c, n):
+permutacionesN(c, n):
         Calcula y devuelve una lista con todas las
        permutaciones posibles que se pueden hacer
        con los elementos contenidos en c tomando n elementos
@@ -44,7 +44,7 @@ def inserta(x, lst, i):
     """
     return lst[:i] + [x] + lst[i:]
 
-def permuta(l):
+def permutaciones(l):
     """Calcula y devuelve una lista con todas las
        permutaciones posibles que se pueden hacer
        con los elementos de una lista(l).
@@ -52,10 +52,10 @@ def permuta(l):
     if len(l) == 0:
         return [[]]
     return sum([inserta_multiple(l[0], s)
-                for s in permuta(l[1:])],
+                for s in permutaciones(l[1:])],
                [])
 
-def permutar(c, n):
+def permutacionesN(c, n):
     """ Acepta una lista como argumento, y devuelve todas
         las permutaciones en otra lista de listas"""
     
@@ -65,7 +65,7 @@ def permutar(c, n):
        con los elementos contenidos en c tomando n
        elementos a la vez.
     """
-    return sum([permuta(s)
+    return sum([permutaciones(s)
                 for s in combinacion.combinaciones(c, n)],
                [])
 
