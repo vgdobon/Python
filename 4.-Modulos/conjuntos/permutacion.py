@@ -30,7 +30,11 @@ ________________________________________________________________________________
 
 """
 import math
+<<<<<<< HEAD
 import conjuntos.combinacion as cc
+=======
+import conjuntos.combinacion
+>>>>>>> 1a634a75ae048144af292025987d002456024604
 
 def inserta_multiple(x, lst):
     """Devuelve una lista con el resultado de
