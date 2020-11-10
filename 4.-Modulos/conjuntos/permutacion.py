@@ -30,7 +30,7 @@ ________________________________________________________________________________
 
 """
 import math
-import combinacion
+import conjuntos.combinacion as cc
 
 def inserta_multiple(x, lst):
     """Devuelve una lista con el resultado de
@@ -66,7 +66,7 @@ def permutacionesN(c, n):
        elementos a la vez.
     """
     return sum([permutaciones(s)
-                for s in combinacion.combinaciones(c, n)],
+                for s in cc.combinacionesN(c, n)],
                [])
 
 
