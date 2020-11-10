@@ -30,7 +30,7 @@ ________________________________________________________________________________
 
 """
 import math
-import combinacion
+import conjuntos.combinacion
 
 def inserta_multiple(x, lst):
     """Devuelve una lista con el resultado de
