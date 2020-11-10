@@ -6,7 +6,7 @@ def divisores(numero):
     i=2
 
     while i < numero:
-        if(numero%i==0):
+        if numero%i==0 :
             divisores.append(i)
         i+=1
         
