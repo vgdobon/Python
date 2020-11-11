@@ -30,11 +30,8 @@ ________________________________________________________________________________
 
 """
 import math
-<<<<<<< HEAD
 import conjuntos.combinacion as cc
-=======
-import conjuntos.combinacion
->>>>>>> 1a634a75ae048144af292025987d002456024604
+
 
 def inserta_multiple(x, lst):
     """Devuelve una lista con el resultado de
@@ -72,7 +69,6 @@ def permutacionesN(c, n):
     return sum([permutaciones(s)
                 for s in cc.combinacionesN(c, n)],
                [])
-
 
 def numero_permutaciones(l, n):
     """Calcula y devuelve el número de permutaciones

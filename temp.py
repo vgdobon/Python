@@ -23,3 +23,6 @@
 #     r = potencia(c[:-1])
 #     return r + [s + [c[-1]] for s in r]
 
+
+
+
