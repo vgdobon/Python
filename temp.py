@@ -25,4 +25,10 @@
 
 
 
+<<<<<<< HEAD
 
+=======
+tablero_inicial[4][7]
+print(len(tablero_inicial[0]))
+print(len(tablero_inicial))
+>>>>>>> 55889c5cdee872f41508f8f8290f6b7c0050c046
