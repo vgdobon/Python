@@ -23,3 +23,8 @@
 #     r = potencia(c[:-1])
 #     return r + [s + [c[-1]] for s in r]
 
+
+
+tablero_inicial[4][7]
+print(len(tablero_inicial[0]))
+print(len(tablero_inicial))
