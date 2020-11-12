@@ -36,7 +36,6 @@ def infinite_primes(inicio=2):
         if is_prime(inicio):
             yield inicio
         inicio+=1
-    pass
 
 start_time = time()
 for i in infinite_primes():
