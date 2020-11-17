@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 
-FICH_TABL = "7.-ManipulacionDeDatos/juego_vida.txt"
+FICH_TABL = "7.-ManipulacionDeDatos/juego-vida.txt"
 
 def leer_tablero_fich(nombre_fich):
     """Lee un fichero de texto con un contenido adecuado (...) y lo convierte
@@ -11,28 +11,34 @@ def leer_tablero_fich(nombre_fich):
     # - Comprobar que todas tengan la misma logitud
     # - Permitir cualquier número de líneas de entrada
     # - Ignorar las líneas completamente vacías
-    m = [[]]  # La matriz resultado
-    #
+    # La matriz resultado
+    m = []
     with open(nombre_fich, 'r') as file_read:
         
         longitud = 0
 
-        for linea in file_read:
-            if longitud==0:
-                longitud = len(linea)
-            elif len(linea)!=longitud:
-                return "La siguiente linea no tiene la longitud correcta:",linea
+        # for linea in file_read:
+        #     if longitud==0:
+        #         longitud = len(linea)
+        #     elif len(linea)!=longitud:
+        #         return "La siguiente linea no tiene la longitud correcta:",linea
 
         i=0
         for linea in file_read:  # NOTA: mejor que file_read.readlines():
 
-            j=0
-            for char in linea:
-                m[i][j]==char
-                j+=1
-            i+=1
+            # j=0
+            # for char in linea:
+            #     m[i][j]==char
+            #     j+=1
+            # i+=1
+            linea_lista = list(linea.strip())
+            m.append(linea_lista)
     return m
 
 m = leer_tablero_fich(FICH_TABL)
 
-print(m)
+for i in m:
+    linea=""
+    for j in i:
+        linea = linea + j
+    print(linea)
