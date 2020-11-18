@@ -42,9 +42,13 @@
 
 # print(cadena_aleatoria())
 
-tablero_acertado = [ ["A","B","C","D","E","F","G"],["H","I","J","K","L","M","N"],["Ñ","O","P","Q","R","S","T"],["U","V","W","X","Y","Z",""] ]
+# tablero_acertado = [ ["A","B","C","D","E","F","G"],["H","I","J","K","L","M","N"],["Ñ","O","P","Q","R","S","T"],["U","V","W","X","Y","Z",""] ]
 
 
-print(tablero_acertado.index("A"))    
+# print(tablero_acertado.index("A"))    
 
 # np.where(tablero_acertado =="A")
+
+
+n = lambda x: x**2
+print(n(5))
