@@ -50,5 +50,9 @@
 # np.where(tablero_acertado =="A")
 
 
-n = lambda x: x**2
-print(n(5))
+# n = lambda x: x**2
+# print(n(5))
+
+cad = "hola, Javier , estamos en Zaragoza , adios\n udghbisuf"
+print(cad.strip())
+print(cad.split())
