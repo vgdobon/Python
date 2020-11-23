@@ -1,0 +1,10 @@
+pandas
+numpy
+matplotlib==3.*
+requests
+IPython
+jupyter
+seaborn
+scipy
+sqlalchemy
+psycopg2

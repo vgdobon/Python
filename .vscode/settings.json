@@ -1,3 +1,4 @@
 {
-    "python.pythonPath": "C:\\Users\\vgd_9\\anaconda3\\python.exe"
+    "python.pythonPath": "venv\\Scripts\\python.exe",
+    "git.ignoreLimitWarning": true
 }
